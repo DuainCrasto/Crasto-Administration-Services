@@ -11,15 +11,15 @@
     />
   </head>
   <body>
-    <section class="header">
+    <section class="sub-header">
       <nav>
         <a href="index.html"><img src="/images/logo.png" /></a>
         <div class="nav-links" id="navLinks">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="overons.html">Over Ons</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Over Ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <!-- Hamburger Icon -->
@@ -53,11 +53,29 @@
           />
         </svg>
       </nav>
-
-      <!-- Overlay for closing the sidebar -->
-      <div id="overlay" onclick="closeMenu()" style="display: none"></div>
+      <h1>Over Ons</h1>
     </section>
 
+    <!-- ------Over Ons ------ -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>De Team</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            neque tempore voluptatibus aperiam possimus aliquid. Harum sapiente
+            reiciendis suscipit iste distinctio earum commodi dolores quam nisi!
+            Dolore quos quisquam accusantium?
+          </p>
+        </div>
+        <div class="about-col">
+          <img src="/images/overons.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Overlay for closing the sidebar -->
+    <div id="overlay" onclick="closeMenu()" style="display: none"></div>
     <!-- ----JavaScript for Toggle Menu ------ -->
     <script src="/js/script.js"></script>
   </body>

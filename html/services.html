@@ -3,20 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Crasto Administratie Services</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="banner">
-      <div class="navbar">
-        <img src="/images/logo.png" alt="logo" class="logo" />
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="/html/aboutus.html">Over Ons</a></li>
-          <li><a href="/html/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="/images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="overons.html">Over Ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Hamburger Icon -->
+        <svg
+          id="openMenu"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 96 960 960"
+          width="48"
+          fill="white"
+          onclick="openMenu()"
+          style="cursor: pointer"
+        >
+          <path
+            d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+          />
+        </svg>
+        <!-- Close Icon -->
+        <svg
+          id="closeMenu"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 96 960 960"
+          width="48"
+          fill="white"
+          onclick="closeMenu()"
+          style="cursor: pointer; display: none"
+        >
+          <path
+            d="M256 856.001 216 816.001 456 576.001 216 336.001 256 296.001 496 536.001 736 296.001l40 40-240 240 240 240-40 40-240-240-240 240Z"
+          />
+        </svg>
+      </nav>
+
+      <!-- Overlay for closing the sidebar -->
+      <div id="overlay" onclick="closeMenu()" style="display: none"></div>
+    </section>
+
+    <!-- ----JavaScript for Toggle Menu ------ -->
+    <script src="/js/script.js"></script>
   </body>
 </html>
