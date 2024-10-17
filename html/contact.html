@@ -11,15 +11,15 @@
     />
   </head>
   <body>
-    <section class="header">
+    <section class="sub-header">
       <nav>
         <a href="index.html"><img src="/images/logo.png" /></a>
         <div class="nav-links" id="navLinks">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="overons.html">Over Ons</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Over Ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <!-- Hamburger Icon -->
@@ -53,11 +53,110 @@
           />
         </svg>
       </nav>
+      <h1>Contact</h1>
+    </section>
+    <!-- ----contact us----- -->
 
-      <!-- Overlay for closing the sidebar -->
-      <div id="overlay" onclick="closeMenu()" style="display: none"></div>
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.316988052633!2d5.1801351126475454!3d52.11036097183967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c668fa89fd810b%3A0x81c3c01c7cbc0e61!2sTroelstraweg%20109%2C%203732%20CC%20De%20Bilt!5e0!3m2!1sen!2snl!4v1729173417472!5m2!1sen!2snl"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
 
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50px"
+              viewBox="0 -960 960 960"
+              width="50px"
+              fill="#f44336"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+            <span>
+              <h5>Troelstraweg 109, 3732 CC</h5>
+              <h5>De Bilt, Nederland</h5>
+            </span>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50px"
+              viewBox="0 -960 960 960"
+              width="50px"
+              fill="#f44336"
+            >
+              <path
+                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+              />
+            </svg>
+            <span>
+              <h5>+06 51166962</h5>
+              <p>Donderdag tot Vrijdag, 9:00 tot 18:00</p>
+            </span>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50px"
+              viewBox="0 -960 960 960"
+              width="50px"
+              fill="#f44336"
+            >
+              <path
+                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+              />
+            </svg>
+            <span> <h5>roma.crasto@hotmail.com</h5></span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Voer je naam in"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Voer je emailadres in"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Voer het onderwerp in"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Bericht"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">
+              Verstuur Bericht
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overlay for closing the sidebar -->
+    <div id="overlay" onclick="closeMenu()" style="display: none"></div>
     <!-- ----JavaScript for Toggle Menu ------ -->
     <script src="/js/script.js"></script>
   </body>
