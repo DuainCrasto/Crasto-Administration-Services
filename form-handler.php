@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Email details
-    $email_from = 'info@crastoadministratie.nl'; 
+    $email_from = 'info@www.crastoadministratie.nl'; 
     $email_subject = 'New Form Submission'; 
 
     // Create email body
